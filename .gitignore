@@ -1,0 +1,49 @@
+# Общи Visual Studio файлове
+.vs/
+.vs2019/
+.idea/
+.vscode/
+
+# Системни файлове
+Thumbs.db
+Desktop.ini
+
+# Преходни файлове за компилиране
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]evelopment/
+[Dd]ebugBuild/
+[Dd]ebugTest/
+[Dd]ebugTestPublic/
+Release/
+ReleaseBuild/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+
+# Файлове на Visual Studio за тестове
+TestResults/
+
+# Конфигурации на компилатора
+.vsconfig
+
+# Логове
+*.log
+
+# Папки с временни и кеширани файлове
+obj/
+bin/
+
+# Файлове за настройки на IDE
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Файлове на NUGET пакети
+*.nupkg
+*.snupkg
+
+# Настройки на пакети за зависимост
+packages/ 
