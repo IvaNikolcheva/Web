@@ -1,0 +1,28 @@
+﻿@model Web.Models.Books.CreateBookViewModel
+    <h2>Create new book</h2>
+
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input asp-for="Title" class="form-control"/>
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="Title">Author</label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+    <div class="form-group">
+        <label for="Title">Year</label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="Title">GenreId</label>
+            <select class="form-control" asp-for="GenreId" asp-items="ViewBag.GenreId">
+                <option value="">Please select a genre</option>
+            </select>
+            <span asp-validation-for="GenreId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>

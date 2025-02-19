@@ -1,0 +1,21 @@
+﻿@model Web.Models.Book
+
+<h2>Details</h2>
+
+<div>
+    <h4>Book</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Title</dt>
+        <dt class="col-sm-10">@Model.Title</dt>
+
+        <dt class="col-sm-2">Author</dt>
+        <dt class="col-sm-10">@Model.Author</dt>
+
+        <dt class="col-sm-2">Year</dt>
+        <dt class="col-sm-10">@Model.Year</dt>
+
+        <dt class="col-sm-2">Genre</dt>
+        <dt class="col-sm-10">@Model.Genre.Name</dt>
+    </dl>
+</div>
+<a asp-action="Index" class="btn btn-primary">Back to list</a>

@@ -19,4 +19,16 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color:beige;
+}
+body.theme-light{
+    background-color: floralwhite;
+    color:black;
+}
+    body.theme-dark {
+        background-color: darkslategrey;
+        color: white;
+    }
+.table{
+    background-color:azure;
 }

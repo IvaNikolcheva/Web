@@ -6,3 +6,19 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@{
+    var currentTheme = ViewBag.Theme ?? "light";
+}
+ <h2>Избор на тема</h2>
+
+ <form method="post" asp-action="ChangeTheme">
+     <label>
+         <input type="radio" name="theme" value="light" @currentTheme="light" />
+         Светла тема
+        <input type="radio" name="theme" value="dark" @currentTheme="dark" />
+        Tъмна тема
+     </label>
+     <button type="submit">Запази</button>
+ </form>
+ <p>Текуща заявка: <strong>@currentTheme</strong></p>

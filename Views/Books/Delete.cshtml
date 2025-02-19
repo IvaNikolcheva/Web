@@ -1,0 +1,17 @@
+﻿@model Web.Models.Books.DeleteBookViewModel
+
+<h1>Delete book</h1>
+
+<h4>Do you really want to delete this book?</h4>
+
+<div>
+    <h5>Title: @Model.Title</h5>
+    <p>Author: @Model.Author</p>
+    <p>Year: @Model.Year</p>
+    <p>Genre: @Model.Genre</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>
