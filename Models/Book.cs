@@ -8,6 +8,6 @@
         public int Year {  get; set; }
         public int GenreId { get; set; }
         public Genre Genre { get; set; }
-        //comment
+        //Още коментари
     }
 }
