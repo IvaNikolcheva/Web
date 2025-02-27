@@ -138,7 +138,8 @@ namespace Web.Controllers
             _context.Books.Remove(book);
             _context.SaveChanges();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index));//small change
+            
         }
     }
 }
